@@ -11,7 +11,7 @@ import tictactoe from './tictactoe.js'
 const app =(
     <BrowserRouter>
     <div>
-        <Route exact path="/" component= {Home} ></Route>
+        <Route exact path="/"  component= {Home} ></Route>
         <Route exact path ="/projects" component={Project}></Route> 
         <Route exact path ="/calculator" component={Calculator}></Route>
         <Route exact path ="/tictactoe" component={tictactoe} ></Route>

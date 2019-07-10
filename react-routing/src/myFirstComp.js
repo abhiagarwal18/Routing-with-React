@@ -60,7 +60,7 @@ class Calculator extends Component{
                 {
                     buttons.map((data,i)=>{
                         
-                        return(<Fragment>
+                        return(<Fragment key= {i}>
                             {(i%3===0)?  <br/>  : null}
                             <Button handleClick= {this.changeDisplay} key={i} label={data}/>
                             </Fragment>)
