@@ -8,7 +8,7 @@ class Button extends Component{
         this.handleClick=this.handleClick.bind(this)
     }
     handleClick=()=>{
-        this.props.handleClick(this.props.index)
+        this.props.handleClick(this.props.label)
     }
     render(){
         return(
