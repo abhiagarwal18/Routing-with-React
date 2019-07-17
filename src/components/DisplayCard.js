@@ -24,20 +24,22 @@ const useStyles = makeStyles({
 });
 
 function DisplayCard(props) {
-    const handleClick = () =>{
+    const handleClick= ()=>{
         props.cardClick(props.data.id)
-    } 
+    }
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
+
   return (
-    <Card className={classes.card} onClick={handleClick}>
-      <CardContent>
-          <img src={props.image} width="100%" height={160} alt="image" />
+    <Card className={classes.card} onClick={handleClick} >
+      <CardContent>          <img src={props.image} width="100%" height={160} alt="image" />
+
+
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           {props.data.name}
         </Typography>
         <Typography variant="h5" component="h2">
-         {props.data.price}
+          {props.data.price}
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
           {props.data.guestGender}
@@ -49,5 +51,4 @@ function DisplayCard(props) {
     </Card>
   );
 }
-
-export default  DisplayCard
+export default DisplayCard;
