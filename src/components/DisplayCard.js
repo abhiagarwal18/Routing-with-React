@@ -24,40 +24,30 @@ const useStyles = makeStyles({
 });
 
 function DisplayCard(props) {
-    const handleClick= ()=>{
+    const handleClick = () =>{
         props.cardClick(props.data.id)
-    }
+    } 
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
-
   return (
-    <Card className={classes.card} onClick={handleClick} >
-      <CardContent>          <img src={props.image} width="100%" height={160} alt="image" />
-
-
+    <Card className={classes.card} onClick={handleClick}>
+      <CardContent>
+          <img src={props.image} width="100%" height={160} alt="image" />
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
+          {props.data.name}
         </Typography>
         <Typography variant="h5" component="h2">
-          be
-          {bull}
-          nev
-          {bull}o{bull}
-          lent
+         {props.data.price}
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-          adjective
+          {props.data.guestGender}
         </Typography>
         <Typography variant="body2" component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
+          {props.data.location}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
 }
-export default DisplayCard;
+
+export default  DisplayCard
