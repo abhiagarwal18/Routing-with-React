@@ -8,6 +8,7 @@ import Home from './containers/home.js';
 import Project from './containers/projects.js'
 import Calculator from './myFirstComp.js'
 import tictactoe from './tictactoe.js'
+import Oyo from './components/oyo.js'
 const app =(
     <BrowserRouter>
     <div>
@@ -15,6 +16,7 @@ const app =(
         <Route exact path ="/projects" component={Project}></Route> 
         <Route exact path ="/calculator" component={Calculator}></Route>
         <Route exact path ="/tictactoe" component={tictactoe} ></Route>
+        <Route exact path='/oyo' component={Oyo}></Route>
 
 
     </div>
