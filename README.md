@@ -1,3 +1,13 @@
+## Extra Installations Required:
+
+* npm install '@material-ui/core'
+* npm install '@material-ui/styles'
+* npm install '@material-ui/icons'
+* npm install 'react-router-dom'
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
